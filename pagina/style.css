@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+    user-select: none;
+    background-color: black;
+    overflow-x: hidden;
+}
+h1{
+    font-weight: 700;
+}
+h2{
+    font-size: 2em;
+}
+li{
+    font-weight: bold;
+    font-size: 1.3em;
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.cabeza{
+    height: 60px;
+    background:linear-gradient(to top left, yellowgreen , #d46351 );
+    /* border: 1px solid red; */
+    position: sticky;
+    top: 0;
+    z-index: 100000000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1.3em;
+}
+.navegacion a:hover{
+    border-bottom: 2px solid white;
+    color: #9eec76;
+    transition: all 200ms;
+}
+.redes a{
+    color: white;
+    margin-left: 1em;
+}
+.redes a:hover{
+    filter: drop-shadow(1px 1px 1px rgb(119, 255, 119));
+    transition: all 100ms;
+}
+.lineas{
+    display: none;
+    cursor: pointer;
+}
+.info,.platillosE,.Refa,.tipico,.Desallonos,.cena,.almu{
+    max-width: 100%;
+    height: 45em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+.info{
+    background-color: #d46351 ;
+}
+.hora{
+    color: teal;
+}
+.lugar{
+    color: rgb(29, 52, 114);
+    margin-top: 1em;
+}
+.alerta{
+    background-color: red;
+    width: 80%;  
+    text-align: center;
+    font-weight: bold;
+
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+
+}
+.platillosE{
+    background-image: url(/tipico1.jpg);
+    /* border: 1px solid red; */
+    color: black;
+}
+.platillosE li{
+    filter: drop-shadow(1px 1px 1px red);
+}
+.Desallonos{
+    background-image: url(/tipico2.jpg);
+    /* border: 1px solid red; */
+    color: black;
+}
+.mismo{
+    width: 60%;
+}
+.almu{
+    background-image: url(/tipico3.jpg);
+    /* border: 1px solid red; */
+    background-color: rgb(103, 55, 131); 
+}
+.cena{
+    background-image: url(/tipico4.jpg);
+    /* border: 1px solid red; */
+    background-color: rgb(103, 55, 131); 
+}
+.Refa{
+    background-image: url(/tipico5.jpg);
+    /* border: 1px solid red; */
+    background-color: rgb(136, 6, 66); 
+}
+
+.tipico{
+    background-image: url(/tipico6.jpeg);
+    /* border: 1px solid red; */
+    background-color: rgb(14, 50, 151); 
+}
+.tarjetas{
+    background-color: rgba(255, 255, 255, 0.712);
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 1em;    
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+.pie{
+    background-color: #d46351;
+    text-align: center;
+}
+.infos{
+    margin-top: 13em;
+}
+.imagen{
+    width: 90%;
+    border-radius: 1em;
+    margin-left: 1em;
+}
+.ordenar{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 3em;
+    color: white;
+    background-color: #00e676;
+    padding: 4px;
+    border-radius: 1em;
+    box-shadow: 1px 1px 8px black;
+}
+.ordenar:hover{
+    transform: scale(1.06);
+    transition: all linear 300ms;
+}
+/* .carga{
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+@media(max-width:1120px){
+    body{
+        overflow-x: hidden;
+    }
+    .cabeza{
+        height: 20%;
+        padding: 1em;
+    }
+    .lineas{
+        display: block;
+        font-size: 1.6em;
+    }
+    .title{
+        font-size: 1.6em;
+
+    }
+    .navegacion{
+        display: none;
+        margin-left: 9px;
+    }
+    .navegacion a{
+        margin-top: 9px;
+
+    }
+    .navegacion.show{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        background-color:#d1351d;
+    }
+    .redes{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+         top:8em;
+         left: -10px;
+        
+        font-size: 1.3em;
+        
+    }
+    .redes a{
+        margin-top: 1em;
+    }
+    .tarjetas{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .imagen{
+        width:100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .ordenar{
+        margin-bottom: 2em;
+    }
+    .infos{
+       margin-top:23em ;
+        font-size: 0.9em;
+    }
+    .alerta{
+        font-size: 0.9em;
+        width: 100%;
+        font-weight: bold;
+
+    }
+}
